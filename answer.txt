@@ -1,0 +1,44 @@
+ 
+ 
+Select E.title, E.air_date, F.actor_name, F.character_name, C.role, S.salary FROM Episodes E, features F, Character C, stars S WHERE E.quality_rating > 3 AND F.title = E.title AND F.character_name = C.character_name AND S.season_num = E.season_num AND S.actor_name = F.actor_name ORDER BY E.air_date ASC, E.title, F.actor_name, F.character_name
+
+TITLE                AIR_DATE   ACTOR_NAME           CHARACTER_NAME       ROLE                 SALARY                  
+-------------------- ---------- -------------------- -------------------- -------------------- ------------------------
+Alone                09/10/2015 John Malkovich       John                 the one                         +9.99990E+004
+Together             10/16/2015 John Malkovich       John                 the one                         +9.99990E+004
+Hooking up           09/09/2016 Jennifer Lawrence    Veronica             staid friend                    +2.50000E+005
+Hooking up           09/09/2016 Josh Hutcherson      Cameron              sardonic friend                 +1.50000E+005
+Hooking up           09/09/2016 Mindy Kaling         Paige                whimsical friend                +2.00000E+005
+Hooking up           09/09/2016 Richard Ayoade       Moss                 geeky friend                    +2.50000E+005
+Prohibition          09/16/2016 Allie Grant          Issy                 the user                        +1.50000E+005
+Prohibition          09/16/2016 Justin Kirk          Ned                  the enabler                     +2.75000E+005
+Prohibition          09/16/2016 Mary-Louise Parker   Andi                 the pusher                      +2.75000E+005
+The Lazy Amazon      09/23/2016 Jennifer Lawrence    Veronica             staid friend                    +2.50000E+005
+The Lazy Amazon      09/23/2016 Josh Hutcherson      Cameron              sardonic friend                 +1.50000E+005
+The Lazy Amazon      09/23/2016 Mindy Kaling         Paige                whimsical friend                +2.00000E+005
+The Munchies         09/30/2016 Allie Grant          Issy                 the user                        +1.50000E+005
+The Munchies         09/30/2016 Justin Kirk          Ned                  the enabler                     +2.75000E+005
+The Munchies         09/30/2016 Mary-Louise Parker   Andi                 the pusher                      +2.75000E+005
+The Solipsist        10/07/2016 John Malkovich       John                 the one                         +2.49999E+005
+Au Revoir            04/28/2017 John Malkovich       John                 the one                         +2.49999E+005
+Tangerine Skies      09/08/2017 Allie Grant          Veronica             staid friend                    +1.75000E+005
+Tangerine Skies      09/08/2017 Allie Grant          Veronica             staid friend                    +1.00000E+005
+Tangerine Skies      09/08/2017 Britt Robertson      Veronica             staid friend                    +2.00000E+005
+Tangerine Skies      09/08/2017 Josh Hutcherson      Cameron              sardonic friend                 +1.50000E+005
+Tangerine Skies      09/08/2017 Mindy Kaling         Paige                whimsical friend                +3.50000E+005
+Tangerine Skies      09/08/2017 Richard Ayoade       Moss                 geeky friend                    +2.25000E+005
+Cameron Blues        09/15/2017 Josh Hutcherson      Cameron              sardonic friend                 +1.50000E+005
+Cameron Blues        09/15/2017 Richard Ayoade       Moss                 geeky friend                    +2.25000E+005
+All good             09/22/2017 Allie Grant          Issy                 the user                        +1.75000E+005
+All good             09/22/2017 Allie Grant          Issy                 the user                        +1.00000E+005
+All good             09/22/2017 Justin Kirk          Ned                  the enabler                     +3.25000E+005
+All good             09/22/2017 Justin Kirk          Shane                the outsider                    +3.25000E+005
+All good             09/22/2017 Mary-Louise Parker   Andi                 the pusher                      +3.25000E+005
+Toke Bespoke         09/29/2017 Allie Grant          Issy                 the user                        +1.75000E+005
+Toke Bespoke         09/29/2017 Allie Grant          Issy                 the user                        +1.00000E+005
+Toke Bespoke         09/29/2017 Justin Kirk          Ned                  the enabler                     +3.25000E+005
+Toke Bespoke         09/29/2017 Mary-Louise Parker   Andi                 the pusher                      +3.25000E+005
+
+  34 record(s) selected.
+
+
